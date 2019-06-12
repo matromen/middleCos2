@@ -23,4 +23,11 @@ public class WrapperExam {
 	
 	int i5 = i3; // java 5 부터는 auto unboxing 제공 , 객체를 값변수 바로 대입 가능
 	
+	
+	Integer a = new Integer(2);
+	Integer b = 2; // <== auto boxing
+	
+	int c = b.intValue();
+	int d = b; // <== auto unboxing
+	
 }
