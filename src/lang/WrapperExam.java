@@ -30,4 +30,6 @@ public class WrapperExam {
 	int c = b.intValue();
 	int d = b; // <== auto unboxing
 	
+	
+	// auto boxing auto unboxing
 }
