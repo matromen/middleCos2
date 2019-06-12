@@ -28,11 +28,11 @@ public class CharStreamSpeedTest {
 				){
 			
 			int read = -1;
-			//char[] chars = new char[512];
+			char[] chars = new char[512];
 			
-			while((read = fr.read()) != -1) {
-				//fw.write(chars, 0, read);
-				fw.write(read);
+			while((read = fr.read(chars)) != -1) {
+				fw.write(chars, 0, read);
+				//fw.write(read);
 			}
 			
 		}catch(Exception e) {
